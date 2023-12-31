@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Flask Cookbook</title>
+    <title>{{ config.APP_NAME }}</title>
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
 
     <style>
@@ -94,7 +94,7 @@
             <div class="col"></div>
             <div class="col text-center">
                 <a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">
-                    Flask Cookbook
+                    {{ config.APP_NAME }}
                 </a>
             </div>
             <div class="col text-end">
